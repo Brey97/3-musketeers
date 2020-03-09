@@ -42,8 +42,8 @@ if (argv.indexOf('--help') !== - 1) {
 spinner.start();
 
 const opts = {
-  'amount': argv[0] || 1,
-  'from': (argv[1] || 'USD').toUpperCase(),
+  'amount': argv[0] || 10000,
+  'from': (argv[1] || 'EUR').toUpperCase(),
   'to': (argv[2] || 'BTC').toUpperCase()
 };
 
