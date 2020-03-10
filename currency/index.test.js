@@ -112,5 +112,5 @@ test("convert without a correct `from` or `to` currency value", () => {
     from = "BREYCOIN",
     to = "BTC";
   const opts = { amount, from, to };
-  return currency(opts).catch(e => expect(e.message).toMatch(BASE_ERROR));
+  return currency(opts).catch(e => expect(e.message).toMatch("ERROR"));
 });
